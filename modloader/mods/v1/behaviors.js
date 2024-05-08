@@ -3,25 +3,10 @@
     c2_callFunction("execCode", ["globalThis.sdk_runtime = this.runtime"]);
     let runtime = globalThis.sdk_runtime;
     globalThis.sdk_runtime = old;
-    var grav;
-    var js;
-    var wts;
-    var ts;
-    var mts;
-    var pangle;
-    var ms;
-    var mf;
-    var acc;
-    var dec;
-    var width;
-    var height;
-    var downx;
-    var downy;
-    var scale;
-    var dead;
+    var grav, js, wts, ts, mts, pangle, ms, mf, acc, dec, width, height, downx, downy, scale, dead;
     var dborder = null;
     var bordercheck = null;
-    let notify = (title, text, image = "https://ovoplant.github.io/ovo/versions/reverse/electric.png") => {
+    let notify = (title, text, image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVFhHtZLRUcNADETTD01QAB3QFZXQC39QAz/M8MVHuHX8NGtZ57sksDNv4pyk1fqS0w06D/gXVYvOP9/P5blxt3amD49vgQIIP6tmGjdpY+JLoArgJI+rFIOVsRgtB/dqTGlpHpnP1AHPlUMtTdlAVAvymZPreK+UigYfFB7C+ypyv5N6dwqDChnSM6JaDta3URQOBjY8vX/toEbY7FX4haYG8sKX83l3Jnxm4BkaNuclWi5eE4Sa8WwsmmmMpb7swz55FurzWXnxxwSrX34zJwfwt9aiz/UT9J0z9fgtVL56xrtxefAizdRYToCeVOMGCODeDrXGvokQ1FjOdfekGiHuCiA8RL7+I/1ZAJEDcAO9ECznxjQrj8qbvY1+AGo5QC+Evz03wE1WrP79AIK6hwAPw3ICMNfz9gBSt5Eab0UQwlTPHuDIsxGaad6E8CAsBfr1lgPPUBwOBhZ8meM9/M4Dr42WwzyAEfVZrnl7FEUfmHiLDd5HeDxSb6locAM3rRj1qO7ejUNFY2VWMQrgno0pxUBlCDM35F6NqxSDlbE4Wu7zKzdpZ+RLejdQzN2tynSGf1G1yLlCp9MvfdzWwjkzUNQAAAAASUVORK5CYII=") => {
         cr.plugins_.sirg_notifications.prototype.acts.AddSimpleNotification.call(
             runtime.types_by_index.find(
                 (type) => type.plugin instanceof cr.plugins_.sirg_notifications
@@ -73,7 +58,7 @@
             toggleButton.innerText = "";
 
             let loadIcon = document.createElement("img");
-            loadIcon.src = "https://ovoplant.github.io/ovo/versions/reverse/electric.png"
+            loadIcon.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVFhHtZLRUcNADETTD01QAB3QFZXQC39QAz/M8MVHuHX8NGtZ57sksDNv4pyk1fqS0w06D/gXVYvOP9/P5blxt3amD49vgQIIP6tmGjdpY+JLoArgJI+rFIOVsRgtB/dqTGlpHpnP1AHPlUMtTdlAVAvymZPreK+UigYfFB7C+ypyv5N6dwqDChnSM6JaDta3URQOBjY8vX/toEbY7FX4haYG8sKX83l3Jnxm4BkaNuclWi5eE4Sa8WwsmmmMpb7swz55FurzWXnxxwSrX34zJwfwt9aiz/UT9J0z9fgtVL56xrtxefAizdRYToCeVOMGCODeDrXGvokQ1FjOdfekGiHuCiA8RL7+I/1ZAJEDcAO9ECznxjQrj8qbvY1+AGo5QC+Evz03wE1WrP79AIK6hwAPw3ICMNfz9gBSt5Eab0UQwlTPHuDIsxGaad6E8CAsBfr1lgPPUBwOBhZ8meM9/M4Dr42WwzyAEfVZrnl7FEUfmHiLDd5HeDxSb6locAM3rRj1qO7ejUNFY2VWMQrgno0pxUBlCDM35F6NqxSDlbE4Wu7zKzdpZ+RLejdQzN2tynSGf1G1yLlCp9MvfdzWwjkzUNQAAAAASUVORK5CYII="
             loadIcon.style.width = "38px";
             loadIcon.style.height = "38px";
 
